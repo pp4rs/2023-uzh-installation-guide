@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Command Line Tools - Programming Practices for Research in Econonomics</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Command Line Tools";
+        var mkdocs_page_input_path = "commandLine.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Welcome</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Command Line Tools</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#mac-users">Mac Users</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#opening-a-terminal-session">Opening a Terminal Session</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#installing-the-x-code-tools">Installing the X-code Tools</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#installing-homebrew-package-manager">Installing Homebrew Package Manager</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#windows-users">Windows Users</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#winget-installation">Winget Installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#windows-terminal-installation">Windows Terminal Installation</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../textEditor/">Text Editor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitInstall/">Git</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python/">Python</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-more/">Python Extras</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../webscraping_drivers/">Webscraping</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../r/">R</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../rstudio/">RStudio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../r-packages/">R Packages</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../latex/">LaTeX</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pandoc/">Pandoc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../finish-line/">The Finish Line!</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contact/">Contact Us</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../citation-license/">Citation & License</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../updates/">News & Updates</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../acknowledgement/">Acknowledgements</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Programming Practices for Research in Econonomics</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Command Line Tools</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="command-line-tools">Command Line Tools</h1>
+<p>A command-line interface or command language interpreter (CLI), also known as a terminal, is a means of interacting with a computer program where the user issues commands to the program in the form of successive lines of text.</p>
+<p>Throughout the course we will emphasize use of the terminal and executing commands within it as our modus operandi.</p>
+<h2 id="mac-users">Mac Users</h2>
+<p>A command line interface comes already installed with OSX.</p>
+<p>You will need to install some other software from the terminal throughout the course, so it will be useful to install some additional "command line tools" now.</p>
+<h3 id="opening-a-terminal-session">Opening a Terminal Session</h3>
+<p>To open a terminal session:</p>
+<ul>
+<li>Open spotlight with <code>cmd + space</code></li>
+<li>Type in 'terminal'</li>
+<li>When the terminal appears, open it.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Department Managed Macs</p>
+<p>Unfortunately, installation of Homebrew requires admin rights which aren't available on laptops newly issued by the department. Please move on to the next installation step "Text Editor".</p>
+</div>
+<h4 id="installing-the-x-code-tools">Installing the X-code Tools</h4>
+<p>We want to install 'X-code command line tools'. Copy and paste the following and press <code>Return</code></p>
+<pre><code class="language-bash">sudo xcode-select --install
+</code></pre>
+<p>If you get a message that the command line tools are already installed, you can continue to the next step.</p>
+<h4 id="installing-homebrew-package-manager">Installing Homebrew Package Manager</h4>
+<p>Homebrew is a package manager for Mac.</p>
+<p>Install Homebrew by opening a terminal and pasting the following command:</p>
+<pre><code class="language-bash">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre>
+<p>Verify that Homebrew installed correctly, enter the following into your terminal:</p>
+<pre><code class="language-bash">brew doctor
+</code></pre>
+<p>And you should see the following output:</p>
+<pre><code class="language-bash">Your system is ready to brew
+</code></pre>
+<p>Before continuing, lets be sure everything in Homebrew is up to date by entering the following:</p>
+<pre><code class="language-bash">brew upgrade
+</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">brew upgrade on UZH MacOS</p>
+<p>We've seen some problems running <code>brew upgrade</code> on UZH computers with MacOS.
+If you are experiencing this, run the following two lines:</p>
+<p><code>sudo chown -R "$USER":admin/usr/local/Cellar</code></p>
+<p>and </p>
+<p><code>sudo chown -R "$USER":admin/usr/local/share</code></p>
+</div>
+<hr />
+<h2 id="windows-users">Windows Users</h2>
+<p>On Windows we will be using "winget" for most of our installations.</p>
+<h3 id="winget-installation">Winget Installation</h3>
+<p>Winget is part of Microsoft's App Installer which you can get <a href="https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1?hl=en-ch&amp;gl=ch&amp;rtc=1">here</a>. Follow the link and install the application from the Microsoft Store. On machines managed by the department you might get a "failure" pop up, but just wait, it will install. </p>
+<p>After installation, open the Windows Search Bar and type "cmd" and hit <code>return</code>. This will open the Command Line Interface (CLI) of Windows with which we will be working during this course.</p>
+<p>Now type the following command into the CLI and press <code>return</code></p>
+<pre><code class="language-bash">winget --help
+</code></pre>
+<p>Upon succesful installation, you should see a long this of possible command that "winget" can be supplied with. It should start like this:</p>
+<pre><code class="language-bash">Windows Package Manager v1.5.2201
+Copyright (c) Microsoft Corporation. All rights reserved.
+</code></pre>
+<p>Feel free to try some commands such as "list" to see which programs are installed on your machine.</p>
+<h3 id="windows-terminal-installation">Windows Terminal Installation</h3>
+<p>In order work more comfortably with the CLI we will install a better version of the CLI you just used.</p>
+<p>To install "Windows Terminal" copy and paste the following command:</p>
+<pre><code class="language-bash">winget install -e --id Microsoft.WindowsTerminal
+</code></pre>
+<p>Here, install tells winget which action it is supposed to take and "--id" is a flag providing winget with further information. In this case the id of the program we want to install and "-e" tell it to only use exactly this id. You would have been able to find this "id" by running the command:</p>
+<pre><code class="language-bash">winget search WindowsTerminal
+</code></pre>
+<p>Head over to the search in Windows and type "terminal" and hit <code>return</code> to open the WindowsTerminal. We will continue installations there.</p>
+<!-- ### Installing Packages with Homebrew
+
+Now we can use homebrew to easily install software.  We need some basic system tools for some of the programs we will install later.
+
+In particular we need:
+
+* `libxml2`
+* `openssl`
+* `libgit2`
+
+Most of these are already installed, but we need updates of these packages.
+For each of these packages enter:
+
+
+<pre><code class="language-bash">brew reinstall pkg-name
+</code></pre>
+
+
+i.e. `brew reinstall libxml2`.
+
+If you get a message that the package you are trying to reinstall is not yet installed, try `brew install pkg-name` instead.
+
+### Linking Packages to a Terminal Session
+
+We need to ensure that our terminal session has access to what we installed.
+To do this we add some extra lines to our bash profile (we will discuss what this means in class - do what we say for now):
+
+
+<pre><code class="language-bash">echo 'export PATH=&quot;/usr/local/opt/libxml2/bin:$PATH&quot;' &gt;&gt; ~/.zshrc
+echo 'export PATH=&quot;/usr/local/opt/openssl/bin:$PATH&quot;' &gt;&gt; ~/.zshrc
+source .zshrc
+``` --&gt;
+&lt;!-- ## Linux &amp; Windows Users
+
+* Linux Users: Open a terminal session with `Ctrl` + `Alt` + `T`.
+* Windows Users: Open the Windows Terminal as we described [here](/windows-wsl/#installing-windows-terminal)
+
+Copy the following command into terminal and press `Return`:
+
+```bash
+sudo apt-get update
+sudo apt-get install libcurl4-gnutls-dev librtmp-devm libfontconfig1-dev
+</code></pre>
+
+
+After the installation succeeded successfully repeat this one-by-one with the following two other commands:
+
+
+<pre><code class="language-bash">sudo apt-get install libxml2-dev
+sudo apt-get install libssl-dev
+sudo apt-get install gdebi-core
+</code></pre>
+
+-->
+
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+<!-- !!! tip "Windows Users: Copy and Paste"
+    The 'traditional' `Ctrl + C` and `Ctrl + v` may not work with your terminal because the `Ctrl + Key` commands have a special meaning with Linux operating systems.
+    f they don't work for you, there are two alternatives:
+
+    * Use the 'Linux' copy and paste commands: copy is `Ctrl + Shift + C` and paste is `Ctrl + Shift + V`.
+    * To paste text, you just do a right-click.
+    To copy anything inside the terminal, you use highlight the text with your cursor.
+    It is automatically copied to your clipboard. -->
+<!-- markdownlint-restore -->
+
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+<!-- !!! tip "Windows Users: Library Installation"
+    At some point in the install process you may see a screen like this one:
+
+    <img src="../img/misc-windows/96-lib-installer.jpg" class="center" height = "500">
+
+    Here you need to make a choice, which you do by using the left and right arrows followed by `Return`.
+    Lachlan chose, 'No' - but you can safely choose yes without your computer burning down.
+
+    Whenever you get these kinds of screens, you can scroll up and down with the up and down buttons if needed and make decisions by selecting a choice as described above. -->
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Welcome"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../textEditor/" class="btn btn-neutral float-right" title="Text Editor">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../textEditor/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

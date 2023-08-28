@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Python Extras - Programming Practices for Research in Econonomics</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Python Extras";
+        var mkdocs_page_input_path = "python-more.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Welcome</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../commandLine/">Command Line Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../textEditor/">Text Editor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitInstall/">Git</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python/">Python</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Python Extras</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../webscraping_drivers/">Webscraping</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../r/">R</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../rstudio/">RStudio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../r-packages/">R Packages</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../latex/">LaTeX</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pandoc/">Pandoc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../finish-line/">The Finish Line!</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contact/">Contact Us</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../citation-license/">Citation & License</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../updates/">News & Updates</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../acknowledgement/">Acknowledgements</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Programming Practices for Research in Econonomics</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Python Extras</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="additional-python-packages">Additional Python packages</h1>
+<p>Miniforge is a very streamlined Python Distribution containing only the most necessary packages. In addition to these, there are many other packages we need to do scientific computing. We will install those in this section of the guide.</p>
+<div class="admonition tip">
+<p class="admonition-title">Note</p>
+<p>Miniforge (also Mambaforge, Miniconda) is based on the Anaconda Python Distribution, which includes a large number of packages related to scientific computing by default. However, it also means, that it is rather large, and many of those packages are of no interest to most economists. (If you're interested in all the packages included, click <a href="https://docs.continuum.io/anaconda/packages/pkg-docs">here</a> and go to the Python 3.9 tab.) For this reason, start from a barebones distribution and only install what we require instead.</p>
+</div>
+<!-- However, you may come across packages that are not installed by default.
+In this case we recommend you use the `pip` package management tool to install them. -->
+<p>The following recipe works for <em>all</em> operating systems.</p>
+<p>There are a multitude of package management tools that work with Python packages. In this course, we use <code>conda</code>, which is the default one for Anaconda-based Python distributions. It combines dependency management and virtual environments in one program. Furthermore, it is designed with the scientific workflow in mind. For those packages that are not available in the conda repositories, we fall back to <code>pip</code>, Python's standard package manager.</p>
+<div class="admonition tip">
+<p class="admonition-title">Note</p>
+<p>Mixing <code>conda</code> and <code>pip</code> is generally advised against, but sometimes it cannot be avoided. However, by using <code>conda</code> first and <code>pip</code> second, and utilizing virtual environments, you are mostly safe. You can find more info <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment">here</a>.</p>
+</div>
+<!-- !!! note
+    If your python 3 was accessed via `python3` rather than `python` on the previous page, then type `pip3` instead of `pip` for all of the following python packages. -->
+
+<p>First let us update <code>conda</code> by typing the following into the terminal</p>
+<pre><code class="language-bash">conda update conda --yes
+</code></pre>
+<p>Next, install a handful of packages using the following command</p>
+<pre><code class="language-bash">conda install numpy pandas
+</code></pre>
+<p>Press enter to accept the proposed package plan with 'y' and <code>return</code>.</p>
+<p>This command installs those two packages into the default (base) environment. It is fine, as we would like those to be shared across all environments we later create. However, it is generally not the case, as we want dependencies for our different projects well separated. For example, packages for this course should be wholly independent from packages you are using to write a paper. The next command creates a <code>conda</code> environment called <code>pp4rs</code> and installs all the packages required for the course. It might take a while.</p>
+<pre><code class="language-bash">    conda env create -f https://pp4rs.github.io/2023-uzh-installation-guide/assets/pp4rs-env.yml
+</code></pre>
+<p>Generally, you should have such a file for each of your projects in order to easily reproduce the environment it was built in any time in the future.</p>
+<div class="admonition tip">
+<p class="admonition-title">Note</p>
+<p>You can find more info on how to create such environment specifications <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually">here</a></p>
+</div>
+<p>Now it is time to test your Python installation. Type into your shell the following</p>
+<pre><code class="language-bash">    conda activate pp4rs
+</code></pre>
+<p>You should now see that the CLI says <code>(pp4rs)</code> in the beginning.
+To see which packages are install in this new pp4rs environment, run:</p>
+<pre><code class="language-bash">    conda list
+</code></pre>
+<p>It should return a list with all of the packages that are installed in the <code>pp4rs</code> environment. In order to use them, you will need to activate this environment in the beginning of every new shell session.</p>
+<p>You can always see which environment you are currently using, by looking at the beginning of the prompt in your terminal. If you open a new terminal it will say <code>(base)</code>, meaning your base environment. To use the pp4rs environment, you need to activate it.</p>
+<!-- !!! note
+    If you are using a computer with an Intel processor and want every ounce of performance for linear algebra operations, you might want to tell conda to use Intel's matrix algebra algorithms instead of the default open source ones. In order to do that, you simply have to install a quasi-package the following way
+
+    ```
+        conda install blas=*=*mkl --name pp4rs
+    ```
+
+    The performance boost is not huge, though. -->
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../python/" class="btn btn-neutral float-left" title="Python"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../webscraping_drivers/" class="btn btn-neutral float-right" title="Webscraping">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../python/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../webscraping_drivers/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

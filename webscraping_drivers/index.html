@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Webscraping - Programming Practices for Research in Econonomics</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Webscraping";
+        var mkdocs_page_input_path = "webscraping_drivers.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Welcome</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../commandLine/">Command Line Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../textEditor/">Text Editor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitInstall/">Git</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python/">Python</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-more/">Python Extras</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Webscraping</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#mac-users">Mac Users</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#linux-users">Linux Users</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#windows-users">Windows Users</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../r/">R</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../rstudio/">RStudio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../r-packages/">R Packages</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../latex/">LaTeX</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pandoc/">Pandoc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../finish-line/">The Finish Line!</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contact/">Contact Us</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../citation-license/">Citation & License</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../updates/">News & Updates</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../acknowledgement/">Acknowledgements</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Programming Practices for Research in Econonomics</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Webscraping</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <!-- markdownlint-disable MD024 -->
+<!-- see https://github.com/DavidAnson/markdownlint for code to enable or disable rules -->
+<h1 id="web-scraping-using-an-automated-browser">Web Scraping Using an Automated Browser</h1>
+<p>Sometimes when we scrape the web, we need to automate our computer to open a web browser to gather information from each page.
+This is especially true when the site we want to scrape has content that is loaded dynamically with javascript.</p>
+<p>We will solve this by installing Google Chrome and using a tool called Chromedriver. The former has to be installed manually, but the latter  will be handled by a very handy Python package we have already installed (<code>chromedriver-autoinstaller</code>).</p>
+<p>Installing this stuff is operating system specific, hence so are the instructions below.</p>
+<div class="admonition note">
+<p class="admonition-title">Department Managed Laptops</p>
+<p>Head over to the Sofware Center and install Google Chrome.</p>
+</div>
+<h2 id="mac-users">Mac Users</h2>
+<p>We need an up to date version of the web browser Google Chrome.
+We will install it via Homebrew.
+Enter the following into the terminal and hit <code>Return</code>:</p>
+<pre><code class="language-bash">brew install --cask google-chrome
+</code></pre>
+<p>Verify the install:</p>
+<pre><code class="language-bash">google-chrome --version
+</code></pre>
+<p>which should yield output similar to:</p>
+<pre><code class="language-bash">Google Chrome 103.0.5060.53
+</code></pre>
+<!-- ### Chromedriver
+
+Now we install some software than can control a Google Chrome browser.
+It is called Chromedriver.
+Again, install via Homebrew:
+
+
+<pre><code class="language-bash">brew install --cask chromedriver
+</code></pre>
+
+
+Verify your install.
+
+
+<pre><code class="language-bash">chromedriver --version
+</code></pre>
+
+
+The expected output is `ChromeDriver 92.0.4515.107`.
+
+It **is important** that the version numbers (i.e the '92.xxx' part) match between Google Chrome and Chromedriver.
+
+!!! warning "Security and Privacy Settings"
+
+    When you try and run the `chromedriver --version` command, a popup window may emerge warning you that chromedriver cannot be opened because the developer cannot be verified.
+
+    If this happens, click 'Cancel' and read on.
+
+    Go to System Preferences > Security & Privacy > Allow apps downloaded from > "Always allow" next to chromedriver.
+
+    Now try again. -->
+
+<h2 id="linux-users">Linux Users</h2>
+<p>We need an up to date version of Google Chrome and some additional linux packages.</p>
+<p>First add the additional linux packages by entering the following into the terminal:</p>
+<pre><code class="language-bash">sudo apt-get install libxss1 libappindicator1 libindicator7
+</code></pre>
+<p>Now let's download the latest stable version of Google Chrome using the terminal:</p>
+<pre><code class="language-bash">wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+</code></pre>
+<p>And now install it:</p>
+<pre><code class="language-bash">sudo dpkg -i google-chrome*.deb
+sudo apt-get install -f
+</code></pre>
+<p>Verify the install:</p>
+<pre><code class="language-bash">google-chrome --version
+</code></pre>
+<p>which should yield output similar to:</p>
+<pre><code class="language-bash">Google Chrome 103.0.5060.53
+</code></pre>
+<!-- ### Chromedriver
+
+Install `xvfb` by pasting the following into a terminal and then pressing `Return`:
+
+
+<pre><code class="language-bash">sudo apt-get install xvfb
+</code></pre>
+
+
+This will allow Chrome to run 'headless' - i.e. without popping up a browser.
+
+Install Chromedriver by pasting the following and then pressing `Return`:
+
+
+<pre><code class="language-bash">sudo apt-get install unzip
+
+wget -N https://chromedriver.storage.googleapis.com/92.0.4515.107/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+chmod +x chromedriver
+
+sudo mv -f chromedriver /usr/local/share/chromedriver
+sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+</code></pre>
+
+
+Now verify the installation was successful:
+
+
+<pre><code class="language-bash">chromedriver --version
+</code></pre>
+
+
+The expected output is `ChromeDriver 92.0.4515.107 ....`.
+
+It **is important** that the version numbers (i.e the '92.xx' part) match between Google Chrome and Chromedriver.
+
+!!! tip "Hat-tip"
+    We borrowed quite liberally from Christopher Su to for instructions on [installing Chrome and Chromedriver](https://christopher.su/2015/selenium-chromedriver-ubuntu/). -->
+
+<h2 id="windows-users">Windows Users</h2>
+<p>Everyone with admin right can install Google Chrome with:</p>
+<pre><code class="language-bash">winget install -e --id Google.Chrome
+</code></pre>
+<p>Verify the installation by opening Chrome.</p>
+<!-- ## Additional Steps for Windows 10 Users
+
+We will Google Chrome to be able to "pop out" of our Ubuntu installation so that we can see it visually. 
+Here's how we can make that happen:
+
+!!! note
+    Windows 11 can handle GUI apps under WSL by default. This section is only relevant form Windows 10 users.
+
+* Install [GWSL](https://opticos.github.io/gwsl/) on Windows. It's easiest to get it through the Windows Store.
+* Install the x11 client inside our Ubuntu installation. Type the following into the terminal:
+
+
+<pre><code class="language-bash">sudo apt install x11-apps -y
+</code></pre>
+
+
+* Enable display and audio exporting in GWSL
+
+    * Start GWSL from the Start menu
+    * Click on its icon on the taskbar
+    * Select GWSL distro tools
+    * Select Display/Audio Auto-exporting
+    * Restart Ubuntu if prompted
+
+
+!!! caution
+    As you are told by GWSL, you will need to allow GWSL through the firewall both on public and private networks. Be sure to check all boxes when prompted by Windows Firewall. If you miss this step, follow the guide [here](https://opticos.github.io/gwsl/tutorials/manual.html).
+
+Finally, let's test if these steps worked. Open an Ubuntu terminal, and type
+
+
+<pre><code class="language-bash">google-chrome
+</code></pre>
+
+
+A linuxy looking Google Chrome should open in a new window. -->
+
+<!-- !!! tip "Starting xLaunch on Windows"
+
+    **Note**: Students don't need to do what is mentioned inside this box during installation. 
+    The info in this box is designed to remind us as instructors what we will need to do before starting the webscraping session.
+
+    * Start XLaunch on Windows from the start menu.
+    * Select Multiple Windows (default).
+    * Select Start no client (default).
+    * Check Disable access control
+
+    When one is finished their session, exit xLaunch. -->
+
+<!-- * Uncheck Native opengl  <- this might be needed?-->
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../python-more/" class="btn btn-neutral float-left" title="Python Extras"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../r/" class="btn btn-neutral float-right" title="R">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../python-more/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../r/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

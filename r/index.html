@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>R - Programming Practices for Research in Econonomics</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "R";
+        var mkdocs_page_input_path = "r.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Welcome</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../commandLine/">Command Line Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../textEditor/">Text Editor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitInstall/">Git</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python/">Python</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-more/">Python Extras</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../webscraping_drivers/">Webscraping</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">R</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#installing-r-for-mac-users">Installing R for Mac Users</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installing-r-for-linux-users">Installing R for Linux Users</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installing-r-for-windows-users">Installing R for Windows Users</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#verifying-your-install-of-r">Verifying your Install of R</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../rstudio/">RStudio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../r-packages/">R Packages</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../latex/">LaTeX</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pandoc/">Pandoc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../finish-line/">The Finish Line!</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contact/">Contact Us</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../citation-license/">Citation & License</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../updates/">News & Updates</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../acknowledgement/">Acknowledgements</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Programming Practices for Research in Econonomics</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">R</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="r">R</h1>
+<p>R is a language for statistical computing and graphics.
+R's use in the data science and econometrics community has taken off over recent years and (at a bare minimum) should be considered as an open source replacement to Stata.</p>
+<div class="admonition note">
+<p class="admonition-title">Department Managed Laptops<p>Once again, just go to the Software Center. On windows laptops just install R Studio since this will include R. On Mac, install R and RStudio individually.</p>
+</p>
+</div>
+<h2 id="installing-r-for-mac-users">Installing R for Mac Users</h2>
+<p>Go to the <a href="https://cran.r-project.org/">R homepage</a> and download the installer for your operating system.</p>
+<p>The current version for Mac and Windows is <code>R version 4.3.1</code>.</p>
+<p>Once you have installed R, <a href="#verifying-your-install-of-r">verify your install</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Why Not Install via Homebrew?<p>There are conflicting views on Homebrew's installation of <code>R</code>.
+Because we haven't tried it to ensure no problems will emerge, we recommend going with the installation based on the CRAN distributed package.</p>
+</p>
+</div>
+<h2 id="installing-r-for-linux-users">Installing R for Linux Users</h2>
+<p>First, we need to add a repository so that our operating system knows where to install the most recent version of <code>R</code> from.</p>
+<p>Enter the following into the terminal and press <code>Return</code>:</p>
+<pre><code class="language-bash">wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+sudo add-apt-repository &quot;deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/&quot;
+</code></pre>
+<p>Now, update to get the package manifests from the new repository:</p>
+<pre><code class="language-bash">sudo apt-get update
+</code></pre>
+<p>We can now install <code>R</code> as from the terminal by entering the following:</p>
+<pre><code>sudo apt-get install r-base r-base-dev
+</code></pre>
+<p>Install the multi-threaded OpenBlas library to get higher performance for linear algebra operations:</p>
+<pre><code>sudo apt-get install libopenblas-base
+</code></pre>
+<p>Now, <a href="#verifying-your-install-of-r">verify your install</a>.</p>
+<!-- !!! warning "R on WSL Ubuntu vs. R on native Windows"
+        Even if you already have a version of `R` installed on your Windows machine, you need to install `R` inside the WSL Ubuntu environment we have set up.
+        Your Ubuntu terminal cannot see everything you have on your native Windows installation. -->
+
+<h2 id="installing-r-for-windows-users">Installing R for Windows Users</h2>
+<p>We are installing R with winget:</p>
+<pre><code class="language-bash">winget install -e --id RProject.R
+</code></pre>
+<p>Now, <a href="#verifying-your-install-of-r">verify your install</a>.</p>
+<h2 id="verifying-your-install-of-r">Verifying your Install of R</h2>
+<p>Open a terminal and enter:</p>
+<pre><code class="language-bash">R --version
+</code></pre>
+<p>followed by pressing <code>Return</code>. The expected return begins with:</p>
+<pre><code class="language-bash">R version 4.2.x (2022-xx-xx) -- &quot;Some Funky Name&quot;
+</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Failure<p>If this verification doesnt work, R has not been added to your PATH. This is no problem for us. Just check whether RStudio works after installing it in the next step.</p>
+</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../webscraping_drivers/" class="btn btn-neutral float-left" title="Webscraping"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../rstudio/" class="btn btn-neutral float-right" title="RStudio">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../webscraping_drivers/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../rstudio/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

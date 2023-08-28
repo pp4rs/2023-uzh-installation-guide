@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Making Path Settings Permanent - Programming Practices for Research in Econonomics</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Making Path Settings Permanent";
+        var mkdocs_page_input_path = "path-setting.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Welcome</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../commandLine/">Command Line Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../textEditor/">Text Editor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitInstall/">Git</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python/">Python</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-more/">Python Extras</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../webscraping_drivers/">Webscraping</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../r/">R</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../rstudio/">RStudio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../r-packages/">R Packages</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../latex/">LaTeX</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pandoc/">Pandoc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../finish-line/">The Finish Line!</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contact/">Contact Us</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../citation-license/">Citation & License</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../updates/">News & Updates</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../acknowledgement/">Acknowledgements</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Programming Practices for Research in Econonomics</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Making Path Settings Permanent</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="making-path-settings-permanent">Making Path Settings Permanent</h1>
+<p>For our workflow be be command line driven, we need to be able to call software from the command line.
+Whilst much of the software we have installed as automatically made this possible, it is not universally the case.
+Here we will make the extra few changes we need to complete the installation guide.</p>
+<h2 id="windows-users-for-windows-8-and-10">Windows Users (for Windows 8 and 10)</h2>
+<p>You will need local administration rights for your computer, but you should have these on your personal computers or ones owned by the Department.</p>
+<p>Right-click on Computer. Then go to "Properties" and select the tab "Advanced System settings". Choose "Environment Variables" and select "Path" from the list of system variables.</p>
+<p>Choose “Edit” and append (i.e., do not overwrite the previous value):</p>
+<pre><code>    ;C:\Path\to\program.exe
+</code></pre>
+<p>to the variable value – make sure the rest remains as it is and do not include spaces between the ";" and the text.</p>
+<p>Click on OK as often as needed.</p>
+<p>If you accepted all defaults during your installation, and didn't have any other non-default setting prior to starting this guide, modifying the following string, with your relevant username <em>should</em> work:</p>
+<pre><code>    ;C:\Users\ldeer\AppData\Local\atom\bin
+    ;C:\Program Files\Git\bin
+    ;C:\Program Files\R\R-3.X.X\bin
+    ;
+</code></pre>
+<h2 id="mac-users-slight-modifications-for-linux-users">Mac Users (Slight Modifications for Linux Users)</h2>
+<p>You will need to add a line to the file ".bash_profile" or potentially create the file if it didn't already exist.
+This file lives in your home directory and it is hidden from your view by default.</p>
+<p>We now provide a guide of how to create / adjust this file using a tiny editor called nano, if you are familiar with editing text files, just use your editor of choice.</p>
+<p>Open a Terminal and type:</p>
+<pre><code>    nano ~/.bash_profile
+</code></pre>
+<p>If .bash_profile already existed, you will see some text at this point. If so, use the arrow keys to scroll all the way to the bottom of the file.</p>
+<p>Add the following line at the end of the file:</p>
+<pre><code>    export PATH="${PATH}:/path/to/program/inside/package"
+</code></pre>
+<p>for each program we need to make accessible.</p>
+<p>For example to make matlab accessible from the command line:</p>
+<pre><code>    export PATH="${PATH}:/Applications/MATLAB_R2016a.app/bin/matlab
+</code></pre>
+<p>Please do this for the following software:</p>
+<ul>
+<li>Sublime Text</li>
+<li>Git</li>
+<li>Matlab</li>
+<li>R</li>
+</ul>
+<p>Once you have finished,  press Return and then ctrl+o (= WriteOut = save) and Return once more.</p>
+<p>Your default locale settings may conflict with some of the programs we'll need.
+If you want to be on the safe side, add these lines to your .bash_profile file:</p>
+<pre><code>    export LC_ALL=en_US.UTF-8
+    export LANG=en_US.UTF-8
+</code></pre>
+<p>Thanks for Hans-Martin von Gaudecker, and in turn Matthias Bannert for the tip on locale settings.</p>
+<p><strong>Linux users</strong>: For most distributions, everything here applies to the file .bashrc instead of .bash_profile.</p>
+<h2 id="the-end">The End</h2>
+<p>Well done - it's time for a beer, or some other cold beverage to celebrate completing this guide.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

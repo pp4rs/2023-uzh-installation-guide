@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Windows wsl - Programming Practices for Research in Econonomics</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Windows wsl";
+        var mkdocs_page_input_path = "windows-wsl.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Welcome</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../commandLine/">Command Line Tools</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../textEditor/">Text Editor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../gitInstall/">Git</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python/">Python</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../python-more/">Python Extras</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../webscraping_drivers/">Webscraping</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../r/">R</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../rstudio/">RStudio</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../r-packages/">R Packages</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../latex/">LaTeX</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../pandoc/">Pandoc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../finish-line/">The Finish Line!</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contact/">Contact Us</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../citation-license/">Citation & License</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../updates/">News & Updates</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../acknowledgement/">Acknowledgements</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Programming Practices for Research in Econonomics</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Windows wsl</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <!-- markdownlint-disable MD033 -->
+<!-- see https://github.com/DavidAnson/markdownlint for code to enable or disable rules -->
+
+<h1 id="windows-subsystem-for-linux">Windows Subsystem For Linux</h1>
+<div class="admonition tip">
+<p class="admonition-title">Windows Users Only!</p>
+<p>This page is only for those who are using Windows. Those with Mac or Linux operating systems can proceed to 'Command Line Tools.'</p>
+</div>
+<p>Windows Subsystem for Linux (WSL) is a feature in Windows 10/11 that enables you to use Linux command-line tools on your Windows system.
+By installing this feature, everyone in the course will be able to run the same commands, and get the same output - an essential aspect of reproducibility.
+We hope that you will continue to use the WSL features we introduce over the next three weeks after the course is over for your own research related computing.</p>
+<p>The process for installing everything we need here is quite order dependent - follow the steps in the order they appear below.</p>
+<div class="admonition tip">
+<p class="admonition-title">Want More Information?</p>
+<p>For more information about the Windows Subsystem for Linux, look <a href="https://docs.microsoft.com/en-us/windows/wsl/install">here</a>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Up to Date Windows 10/11 Required!</p>
+<p>To go further with this Installation Guide you need to have an up to date installation of Windows 10. 
+IT Services in the Econ Department have assured us, if you update Windows to the latest version in your UZH laptop everything that follows will work. </p>
+<p>If you do not have a Windows 10 machine, <a href="../contact/#questions-or-comments">Contact us!</a></p>
+</div>
+<h2 id="install-the-windows-subsystem-for-linux">Install the Windows Subsystem for Linux</h2>
+<ol>
+<li>Join the Windows Insider Program <a href="https://insider.windows.com/getting-started">here</a></li>
+<li>Check that you have a recent build of Windows 10 (Build 19041 or above)<ul>
+<li>Open up the run command with the <code>Win + R</code> key combo</li>
+<li>Type <code>winver</code> into the run command text box and hit <code>OK</code>.</li>
+<li>You should now see a dialogue screen with a OS build number.</li>
+<li>If the build number is older than 19041, update your windows to a later build.</li>
+</ul>
+</li>
+<li>Open PowerShell as an administrator and type</li>
+</ol>
+<pre><code class="language-bash">wsl --install
+</code></pre>
+<p>The --install command performs the following actions:</p>
+<ul>
+<li>Enables the optional WSL and Virtual Machine Platform components</li>
+<li>Downloads and installs the latest Linux kernel</li>
+<li>Sets WSL 2 as the default</li>
+<li>Downloads and installs the Ubuntu Linux distribution (reboot may be required)</li>
+</ul>
+<p>You will likely be asked to restart your machine during this installation process.</p>
+<p>If you get error messages, you can check the <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10#troubleshooting-installation">troubleshooting pages</a>.
+This can be a little daunting, come see us if you need in person help.</p>
+<div class="admonition warning">
+<p class="admonition-title">WSL installation issues</p>
+<p>When we were trying this ourselves using Windows laptops provided by the University of Zurich we frequently got error messages saying the installation could not continue followed by an error code.
+The missing piece is a need to change a setting in the <a href="https://appuals.com/wsl-register-distribution-error-0x80370102-on-windows-10/">BIOS</a>.
+Changing the 'Intel Virtualization Technology' setting to 'Enabled' fixed it for us.</p>
+<p>If you don't feel comfortable making this kind of BIOS change yourself, we'll help you if you come and see us. </p>
+</div>
+<h2 id="set-up-your-linux-user-info">Set up your Linux user info</h2>
+<p>Once the install is complete:</p>
+<ul>
+<li>Open the distribution using the start menu.</li>
+<li>You will be asked to create a username and password. Do so, and press <code>Enter</code> after each step. <ul>
+<li>You might not see anything change as you type the password, that's OK -- it is recording what you write.</li>
+</ul>
+</li>
+<li>Update and Upgrade your packages. In the shell that is open, use the command:</li>
+</ul>
+<pre><code class="language-bash">sudo apt update &amp;&amp; sudo apt upgrade
+</code></pre>
+<h2 id="set-up-windows-terminal">Set up Windows Terminal</h2>
+<p>Windows Terminal is our preferred terminal for Windows. </p>
+<ol>
+<li>Open the Microsoft Store</li>
+<li>Search for Windows Terminal</li>
+<li>Choose the first option - either Windows Terminal or Windows Terminal (Preview)</li>
+<li>Install it by clicking 'Get'</li>
+<li>Once installed, you will see it under 'Recently Added' in the Windows menu</li>
+<li>Open Windows Terminal</li>
+<li>To get access to your Ubuntu system, click the down arrow in the menu bar</li>
+<li>Select Ubuntu-xx.xx, and your Ubuntu terminal will open</li>
+</ol>
+<h2 id="the-way-forward">The Way Forward</h2>
+<p>As you proceed through the remainder of the Installation Guide, you will generally follow the steps for 'Linux Users' and enter the commands into the Ubuntu Terminal we just installed.</p>
+<p>Occasionally there will be differences between Linux and Windows steps - these will be clearly marked by a separate header 'Windows Users.'</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
